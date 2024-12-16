@@ -1,0 +1,25 @@
+{
+	"include": ["src"],
+	"exclude": ["node_modules", "dist", "*.js"],
+	"compilerOptions": {
+		"baseUrl": "./",
+		"target": "ESNext",
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"skipLibCheck": true,
+		"resolveJsonModule": true,
+		"strict": true,
+		"noImplicitAny": false,
+		"module": "Preserve",
+		"moduleResolution": "bundler",
+		"jsx": "react-jsx",
+		"types": ["node"],
+		"paths": {
+			"@/*": ["./src/*"],
+			"@c": ["./src/components"],
+			"@p": ["./src/pages"],
+			"@p/*": ["./src/pages/*"],
+			"@u": ["./src/utils"],
+			"@u/*": ["./src/utils/*"]
+		}
+	}
+}
